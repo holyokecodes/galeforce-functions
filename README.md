@@ -24,7 +24,7 @@ Creates a new session in Firestore. This is the only time session_secret will be
 Response:
 ```json
 {
-	"session_code": "ABCDE",
+    "session_code": "ABCDE",
     "session_secret": "12345"
 }
 ```
