@@ -77,3 +77,96 @@ Response:
     "unlock_map": false
 }
 ```
+
+### Settings
+Set settings for a session. Anything you put in the settings object will overwrite the settings for that group
+
+`POST /settings`
+
+Body:
+```json
+{
+    "session_code": "ABCDE",
+    "session_secret": "12345",
+    "settings": {
+        "auto_play": true,
+        "mute": true,
+        ...
+    }
+}
+```
+
+Response:
+```json
+{
+    "auto_play": true,
+    "mute": true,
+    ...
+}
+```
+or
+```json
+{
+    "error": "error"
+}
+```
+
+### Player location
+Sets the location of a player
+
+`POST /playerlocation`
+
+Request:
+```
+?session_code=ABCDE&player_name=Jacob&location=ControlRoom
+```
+
+Response:
+```json
+[
+    {
+        "location": "TrainingComplex",
+        "player_name": "Jacob",
+        "timestamp": 1630331133628
+    },
+    {
+        "location": "ControlRoom",
+        "player_name": "Sam",
+        "timestamp": 1630331092038
+    }
+]
+```
+or
+```json
+{
+    "error": "error"
+}
+```
+
+### Complete Mission
+Sets the location of a player
+
+`POST /completemission`
+
+Request:
+```
+?session_code=ABCDE&team_name=team1&mission_id=A1
+```
+
+Response:
+```json
+{
+    "training_stage": "Learn to Drive",
+    "team_name": "team4",
+    "completed_missions": [
+        "B3"
+    ],
+    "control_stage": "Learn to Drive"
+}
+```
+or
+```json
+{
+    "error": "error"
+}
+```
