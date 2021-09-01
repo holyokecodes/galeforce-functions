@@ -8,7 +8,7 @@ const bodyParser = require('body-parser');
 
 // Init
 admin.initializeApp();
-app.use(cors({ origin: true }));
+app.use(cors());
 
 const sessionTemplate = {
     auto_play: false,
