@@ -22,25 +22,25 @@ const sessionTemplate = {
     teams: [
         {
             completed_missions: [],
-            control_stage: "Learn to Drive",
+            control_stage: "Preparation",
             team_name: "team1",
             training_stage: "Learn to Drive"
         },
         {
             completed_missions: [],
-            control_stage: "Learn to Drive",
+            control_stage: "Preparation",
             team_name: "team2",
             training_stage: "Learn to Drive"
         },
         {
             completed_missions: [],
-            control_stage: "Learn to Drive",
+            control_stage: "Preparation",
             team_name: "team3",
             training_stage: "Learn to Drive"
         },
         {
             completed_missions: [],
-            control_stage: "Learn to Drive",
+            control_stage: "Preparation",
             team_name: "team4",
             training_stage: "Learn to Drive"
         }
