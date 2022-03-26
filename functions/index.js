@@ -16,7 +16,7 @@ const sessionTemplate = {
     auto_play: false,
     mute: false,
     player_locations: [],
-    screen_url: "https://docs.google.com",
+    screen_url: "https://galeforce.netlify.app/GaleForceSplash.html",
     session_code: "",
     session_secret: "",
     teams: [
